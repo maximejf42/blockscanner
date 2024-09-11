@@ -18,6 +18,12 @@
     "lodash": "~2.4.1",
     "redis": "~0.12.1",
     "request": "^2.60.0",
-    "when": "~3.7.3"
-  }
+    "when": "~3.7.3",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
